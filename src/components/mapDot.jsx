@@ -1,3 +1,5 @@
+import React from "react";
+
 export function MapDot(params) {
     /**
      * Given a dot that has x, y, z asix values,

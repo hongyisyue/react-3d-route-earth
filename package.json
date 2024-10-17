@@ -1,13 +1,9 @@
 {
   "description": "demo package",
-  "name": "react-3dearth",
-  "version": "1.0.0",
-  "private": true,
+  "name": "react-3d-route-earth",
+  "version": "1.1.0",
+  "private": false,
   "dependencies": {
-    "@babel/cli": "^7.24.8",
-    "@babel/core": "^7.24.8",
-    "@babel/preset-env": "^7.24.8",
-    "@babel/preset-react": "^7.24.7",
     "@react-three/drei": "^7.0.2",
     "@react-three/fiber": "^7.0.1",
     "@testing-library/jest-dom": "^5.14.1",
@@ -16,12 +12,20 @@
     "babel-plugin-glsl": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "three": "^0.129.0",
     "web-vitals": "^1.1.2"
   },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "react-scripts": "1.0.7"
+  },
   "scripts": {
+    "distribute": "set BABEL_ENV=production NODE_ENV=production && babel src --out-dir dist --copy-files --ignore spec.js,test.js --source-maps",
     "build": "babel src --out-dir dist",
+    "cus-build": "set NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components --out-dir dist --copy-files",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -45,7 +49,17 @@
       "last 1 safari version"
     ]
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2",
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hongyisyue/react-3dEarth.git"
@@ -55,8 +69,5 @@
   "bugs": {
     "url": "https://github.com/hongyisyue/react-3dEarth/issues"
   },
-  "homepage": "https://github.com/hongyisyue/react-3dEarth#readme",
-  "devDependencies": {
-    "@babel/plugin-syntax-jsx": "^7.25.7"
-  }
+  "homepage": "https://github.com/hongyisyue/react-3dEarth#readme"
 }

@@ -35,7 +35,7 @@ export function Cube(params) {
                 position={position}
                 onPointerEnter={(e) => { setEnter(true); }}
                 onPointerLeave={(e) => { setEnter(false); }}
-                onPointerDown={mouseDownEvent ?? null}
+                onPointerDown={mouseDownEvent}
             >
                 <boxBufferGeometry args={spec} />
                 <meshBasicMaterial

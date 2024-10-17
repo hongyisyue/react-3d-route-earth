@@ -31,7 +31,7 @@ export function Text3d(params) {
     const position = params.pos;
     //NOTE: text Grometry cannot take in lower case letter
     const text = params.text;
-    const rotate = params.rotate ?? 1;
+    const rotate = params.rotate || 1;
     const font = useLoader(THREE.FontLoader, boldUrl);
     const textOption = params.textOption || {
         font,
@@ -46,9 +46,9 @@ export function Text3d(params) {
     if (position && text) {
         return (
             <mesh
-                onPointerEnter={ enterEvent ?? null }
-                onPointerLeave={ leaveEvent ?? null}
-                onPointerDown={ downEvent ?? null }
+                onPointerEnter={ enterEvent}
+                onPointerLeave={ leaveEvent}
+                onPointerDown={ downEvent}
                 position={position}
                 rotation={[0, Math.PI / rotate, 0]}
             >
