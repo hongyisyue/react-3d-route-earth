@@ -1,7 +1,7 @@
 {
   "description": "demo package",
   "name": "react-3d-route-earth",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "dependencies": {
     "@react-three/drei": "^7.0.2",
@@ -62,12 +62,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hongyisyue/react-3dEarth.git"
+    "url": "git+https://github.com/hongyisyue/react-3d-route-earth.git"
   },
   "author": "Hongyisyue",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hongyisyue/react-3dEarth/issues"
+    "url": "https://github.com/hongyisyue/react-3d-route-earth/issues"
   },
-  "homepage": "https://github.com/hongyisyue/react-3dEarth#readme"
+  "homepage": "https://github.com/hongyisyue/react-3d-route-earth#readme"
 }

@@ -5,7 +5,7 @@ export function Space(params) {
     const content = params.content;
 
     return (
-        <span>
+        <React.Fragment>
             {/* <TrackballControls mode="rotate" object={cloudsRef}> */}
             <pointLight color="#fff6e6" position={[-20, 20, 15]} intensity={2} />
             <pointLight color="#fff6e6" position={[20, 0, -15]} intensity={2} />
@@ -20,7 +20,7 @@ export function Space(params) {
                 fade={true}
             />
             {content}
-        </span>
+        </React.Fragment>
 
     );
 }

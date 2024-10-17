@@ -17,7 +17,7 @@ function Space(params) {
     var content = params.content;
 
     return _react2.default.createElement(
-        "span",
+        _react2.default.Fragment,
         null,
         _react2.default.createElement("pointLight", { color: "#fff6e6", position: [-20, 20, 15], intensity: 2 }),
         _react2.default.createElement("pointLight", { color: "#fff6e6", position: [20, 0, -15], intensity: 2 }),

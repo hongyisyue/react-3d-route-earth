@@ -4,6 +4,7 @@ import { DefaultSettings } from "../data/default";
 import { Text3d } from "../components/text3d";
 import { useLoader } from "@react-three/fiber";
 import boldUrl from '../assets/fonts/bold.blob';
+import React from "react";
 
 export function TextPole(params) {
     /**
@@ -60,7 +61,7 @@ export function TextPole(params) {
         const center = DefaultSettings.earth_center;
         const poleEnd = getLineEndPonit(center, dot);
         return (
-            <span>
+            <React.Fragment>
                 <Pole
                     dot={dot}
                     length={params.length ? params.length : 1}
@@ -74,7 +75,7 @@ export function TextPole(params) {
                     mouseLeaveEvent={leaveEvent}
                     mouseDownEvent={downEvent}
                 ></Text3d>
-            </span>
+            </React.Fragment>
         )
     }
 }

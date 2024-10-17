@@ -33,11 +33,10 @@ export function Demo(params) {
     return (
         <Space
             content={
-                <span>
                     <Earth
                         isEnter={isEnter}
                         content={
-                            <span>
+                            <React.Fragment>
                                 <MapDot dot={beijing_xyz}></MapDot>
                                 <TextPole
                                     dot={beijing_xyz}
@@ -158,11 +157,10 @@ export function Demo(params) {
                                     to={vancouver_xyz}
                                     frameTime={time}
                                 ></MovingPath>
-                            </span>
+                            </React.Fragment>
                         }
                     >
                     </Earth>
-                </span>
             }>
         </Space>
     );

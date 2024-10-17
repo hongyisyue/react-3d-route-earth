@@ -24,6 +24,10 @@ var _bold = require("../assets/fonts/bold.blob");
 
 var _bold2 = _interopRequireDefault(_bold);
 
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -77,14 +81,14 @@ function TextPole(params) {
     if (dot && text) {
         var center = _default.DefaultSettings.earth_center;
         var poleEnd = getLineEndPonit(center, dot);
-        return React.createElement(
-            "span",
+        return _react2.default.createElement(
+            _react2.default.Fragment,
             null,
-            React.createElement(_pole.Pole, {
+            _react2.default.createElement(_pole.Pole, {
                 dot: dot,
                 length: params.length ? params.length : 1
             }),
-            React.createElement(_text3d.Text3d, {
+            _react2.default.createElement(_text3d.Text3d, {
                 pos: poleEnd,
                 text: text,
                 textOption: textOption,
