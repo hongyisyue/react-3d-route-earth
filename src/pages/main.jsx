@@ -54,96 +54,87 @@ export function Main(params) {
                                 <TextPole
                                     dot={tokyo_xyz}
                                     text={'TOKYO'}
-                                    rotate={1.2}
+                                    rotate={1.1}
                                     mouseEnterEvent={(e) => setEnter(true)}
                                     mouseLeaveEvent={(e) => setEnter(false)}
                                 ></TextPole>
-                                <MovingPath
-                                    from={beijing_xyz}
-                                    to={tokyo_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
 
                                 <MapDot dot={cancun_xyz}></MapDot>
                                 <TextPole
                                     dot={cancun_xyz}
                                     text={'CANCUN'}
-                                    rotate={2.5}
+                                    rotate={0.1}
                                     mouseEnterEvent={(e) => setEnter(true)}
                                     mouseLeaveEvent={(e) => setEnter(false)}
                                 ></TextPole>
-                                <MovingPath
-                                    from={vancouver_xyz}
-                                    to={cancun_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
 
                                 <MapDot dot={la_xyz}></MapDot>
                                 <TextPole
                                     dot={la_xyz}
                                     text={'LA'}
-                                    rotate={2.5}
+                                    rotate={0.1}
                                     mouseEnterEvent={(e) => setEnter(true)}
                                     mouseLeaveEvent={(e) => setEnter(false)}
                                 ></TextPole>
-                                <MovingPath
-                                    from={vancouver_xyz}
-                                    to={la_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
 
                                 <MapDot dot={berlin_xyz}></MapDot>
                                 <TextPole
                                     dot={berlin_xyz}
                                     text={'BERLIN'}
-                                    rotate={3.0}
+                                    rotate={1.7}
                                     mouseEnterEvent={(e) => setEnter(true)}
                                     mouseLeaveEvent={(e) => setEnter(false)}
                                 ></TextPole>
-                                <MovingPath
-                                    from={beijing_xyz}
-                                    to={berlin_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
-
-                                <MapDot dot={toronto_xyz}></MapDot>
-                                <TextPole
-                                    dot={toronto_xyz}
-                                    text={'TORONTO'}
-                                    rotate={2.5}
-                                    mouseEnterEvent={(e) => setEnter(true)}
-                                    mouseLeaveEvent={(e) => setEnter(false)}
-                                ></TextPole>
-                                <MovingPath
-                                    from={vancouver_xyz}
-                                    to={toronto_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
-
-                                <MapDot dot={vancouver_xyz}></MapDot>
-                                <TextPole
-                                    dot={vancouver_xyz}
-                                    text={'VANCOUVER'}
-                                    rotate={2.5}
-                                    mouseEnterEvent={(e) => setEnter(true)}
-                                    mouseLeaveEvent={(e) => setEnter(false)}
-                                    mouseDownEvent={(e) => { window.open("https://www.google.com/maps/place/Vancouver,+BC/@49.2577062,-123.2063043,12z/data=!3m1!4b1!4m6!3m5!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375!16zL20vMDgwaDI?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"); }}
-                                ></TextPole>
-                                <MovingPath
-                                    from={beijing_xyz}
-                                    to={vancouver_xyz}
-                                    frameTime={time}
-                                ></MovingPath>
 
                                 <MapDot dot={dubai_xyz}></MapDot>
                                 <TextPole
                                     dot={dubai_xyz}
                                     text={'DUBAI'}
-                                    rotate={2.5}
+                                    rotate={1.3}
                                     mouseEnterEvent={(e) => setEnter(true)}
                                     mouseLeaveEvent={(e) => setEnter(false)}
                                     mouseDownEvent={(e) => { window.open("https://en.wikipedia.org/wiki/University_of_Saskatchewan") }}
                                 ></TextPole>
+
+                                <MapDot dot={toronto_xyz}></MapDot>
+                                <TextPole
+                                    dot={toronto_xyz}
+                                    text={'TORONTO'}
+                                    rotate={0.1}
+                                    mouseEnterEvent={(e) => setEnter(true)}
+                                    mouseLeaveEvent={(e) => setEnter(false)}
+                                ></TextPole>
+
+                                <MapDot dot={vancouver_xyz}></MapDot>
+                                <TextPole
+                                    dot={vancouver_xyz}
+                                    text={'VANCOUVER'}
+                                    rotate={0.1}
+                                    mouseEnterEvent={(e) => setEnter(true)}
+                                    mouseLeaveEvent={(e) => setEnter(false)}
+                                    mouseDownEvent={(e) => { window.open("https://www.google.com/maps/place/Vancouver,+BC/@49.2577062,-123.2063043,12z/data=!3m1!4b1!4m6!3m5!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375!16zL20vMDgwaDI?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"); }}
+                                ></TextPole>
+
+                                <MovingPath
+                                    from={beijing_xyz}
+                                    to={tokyo_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={vancouver_xyz}
+                                    to={cancun_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={vancouver_xyz}
+                                    to={la_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={beijing_xyz}
+                                    to={berlin_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
                                 <MovingPath
                                     from={beijing_xyz}
                                     to={dubai_xyz}
@@ -151,7 +142,22 @@ export function Main(params) {
                                 ></MovingPath>
                                 <MovingPath
                                     from={toronto_xyz}
-                                    to={dubai_xyz}
+                                    to={berlin_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={toronto_xyz}
+                                    to={berlin_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={vancouver_xyz}
+                                    to={toronto_xyz}
+                                    frameTime={time}
+                                ></MovingPath>
+                                <MovingPath
+                                    from={beijing_xyz}
+                                    to={vancouver_xyz}
                                     frameTime={time}
                                 ></MovingPath>
                             </>

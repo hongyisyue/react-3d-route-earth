@@ -50,7 +50,7 @@ export function Text3d(params) {
                 onPointerLeave={ leaveEvent ?? null}
                 onPointerDown={ downEvent ?? null }
                 position={position}
-                rotation={[0, -Math.PI / rotate, 0]}
+                rotation={[0, Math.PI / rotate, 0]}
             >
                 <textGeometry args={[text, textOption]} />
                 <meshBasicMaterial color="#BFF8FF" side={THREE.DoubleSide}></meshBasicMaterial>
