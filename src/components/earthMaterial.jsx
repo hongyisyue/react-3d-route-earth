@@ -18,7 +18,7 @@ export function EarthMaterial(params) {
     );
 
     return (
-        <>
+        <span>
             <sphereGeometry args={[r, horSegment, verSegment]} />
             <meshPhongMaterial specularMap={specularMap} />
             <meshStandardMaterial
@@ -27,6 +27,6 @@ export function EarthMaterial(params) {
                 metalness={0.6}
                 roughness={0.5}
             />
-        </>
+        </span>
     )
 }

@@ -16,7 +16,7 @@ export function CloudMaterial(params) {
     );
 
     return (
-        <>
+        <span>
             <sphereGeometry args={[r + 0.05, horSegment, verSegment]} />
             <meshPhongMaterial
                 map={cloudsMap}
@@ -25,6 +25,6 @@ export function CloudMaterial(params) {
                 transparent={true}
                 side={THREE.DoubleSide}
             />
-        </>
+        </span>
     )
 }

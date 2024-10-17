@@ -35,11 +35,11 @@ export function Main(params) {
     return (
         <Space
             content={
-                <>
+                <span>
                     <Earth
                         isEnter={isEnter}
                         content={
-                            <>
+                            <span>
                                 <MapDot dot={beijing_xyz}></MapDot>
                                 <TextPole
                                     dot={beijing_xyz}
@@ -160,11 +160,11 @@ export function Main(params) {
                                     to={vancouver_xyz}
                                     frameTime={time}
                                 ></MovingPath>
-                            </>
+                            </span>
                         }
                     >
                     </Earth>
-                </>
+                </span>
             }>
         </Space>
     );

@@ -60,7 +60,7 @@ export function TextPole(params) {
         const center = DefaultSettings.earth_center;
         const poleEnd = getLineEndPonit(center, dot);
         return (
-            <>
+            <span>
                 <Pole
                     dot={dot}
                     length={params.length ? params.length : 1}
@@ -74,7 +74,7 @@ export function TextPole(params) {
                     mouseLeaveEvent={leaveEvent}
                     mouseDownEvent={downEvent}
                 ></Text3d>
-            </>
+            </span>
         )
     }
 }

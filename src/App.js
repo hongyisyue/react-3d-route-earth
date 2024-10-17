@@ -1,6 +1,6 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { Main } from './pages/main';
 
 
