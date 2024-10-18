@@ -1,7 +1,7 @@
 {
   "description": "demo package",
   "name": "react-3d-route-earth",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "dependencies": {
     "@react-three/drei": "^7.0.2",
