@@ -1,4 +1,4 @@
-### installation
+### Installation
 https://www.npmjs.com/package/react-3d-earth
 
 ### Demo
