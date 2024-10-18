@@ -1,3 +1,7 @@
+### installation
+https://www.npmjs.com/package/react-3d-earth
+
+### Demo
 https://react-3d-route-earth.netlify.app/
 
 If running locally: In the project directory, you can run:
