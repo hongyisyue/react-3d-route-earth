@@ -26,17 +26,17 @@ A 3d earth spins by default. If you wish to create other components on the surfa
 
 A 3d dot object(default to color red), that serves as a pin on the tellurian.
 To place a MapDot on the surface of the `<Earth>`:
-> 1. Find the latitude and longitude of the place, and create an object like: `myPlace = {lat: 10.1234, lng: 20.5678}`.
+> 1. Find the latitude and longitude of the place, and create an object like: `myPlace = {lat: 10.1234, lng: 20.5678}`.  
 > // Tips: I recommend putting all the locations data in one file under one folder(e.g. '/data/locations.js'), for easier look-up and update.
 > 2. Pass in that object to the function `geoToXYZ()`, then pass the return value of the function to `<MapDot>` via the `dot` property. 
 
 ### TextPole
-> `<TextPole
->   dot={__POINT__} text={__TEXT__} rotate={0.1}
->   length={1}
->   mouseEnterEvent={(e) => setEnter(true)}
->   mouseLeaveEvent={(e) => setEnter(false)}
->   mouseDownEvent={(e) => {__YOUR_EVENT__}}>
+> `<TextPole  
+>   dot={__POINT__} text={__TEXT__} rotate={0.1}  
+>   length={1}  
+>   mouseEnterEvent={(e) => setEnter(true)}  
+>   mouseLeaveEvent={(e) => setEnter(false)}  
+>   mouseDownEvent={(e) => {__YOUR_EVENT__}}>  
 > </TextPole>`
 
 A 3d pole(default to grey) that will go through the point `dot` and display `__TEXT__` at the end of the pole.
